@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "UE4Editor Editor Mac Development (UE4)",
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "/Users/BrightLand/UE4_TopDown/UE4/.vscode/compileCommands_UE4.json"
+        },
+        {
+            "name": "Mac",
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compileCommands": "/Users/BrightLand/UE4_TopDown/UE4/.vscode/compileCommands_Default.json"
+        }
+    ],
+    "version": 4
+}

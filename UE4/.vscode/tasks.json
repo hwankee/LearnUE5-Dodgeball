@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "UE4 Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Shipping",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Shipping",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Shipping",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Test",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Test",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"Mac",
+				"Test",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Shipping",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Shipping",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Shipping",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Test",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Test",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4 IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4 IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4",
+				"IOS",
+				"Test",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4Editor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"Debug",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4Editor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"DebugGame",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"UE4Editor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "UE4Editor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UE4Editor",
+				"Mac",
+				"Development",
+				"/Users/BrightLand/UE4_TopDown/UE4/UE4.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		}
+	]
+}
