@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/BrightLand/UE4_TopDown/MyProject/Source/MyProject/MyProject.Build.cs",
+		"/Users/BrightLand/UE4_TopDown/MyProject/Source/MyProject.Target.cs",
+		"/Users/BrightLand/UE4_TopDown/MyProject/Source/MyProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
