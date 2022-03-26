@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Battery",
+			"Path": "/Users/BrightLand/UE4_TopDown/Battery/Source/Battery.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BatteryEditor",
+			"Path": "/Users/BrightLand/UE4_TopDown/Battery/Source/BatteryEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
