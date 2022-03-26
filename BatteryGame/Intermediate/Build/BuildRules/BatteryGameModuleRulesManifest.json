@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"/Users/BrightLand/UE4_TopDown/BatteryGame/Source/BatteryGame/BatteryGame.Build.cs",
-		"/Users/BrightLand/UE4_TopDown/BatteryGame/Source/BatteryGame.Target.cs",
-		"/Users/BrightLand/UE4_TopDown/BatteryGame/Source/BatteryGameEditor.Target.cs"
-	],
-	"EngineVersion": "4.27.2"
-}
