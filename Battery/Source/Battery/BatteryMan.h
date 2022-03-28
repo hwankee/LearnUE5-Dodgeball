@@ -27,10 +27,10 @@ public:
 	ABatteryMan();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = VM_MEMORY_RAWCAMERA)
-		USpringArmComponent* CameraBoom;
-	
+	USpringArmComponent* CameraBoom;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = VM_MEMORY_RAWCAMERA)
-		UCameraComponent* FollowCamera;
+	UCameraComponent* FollowCamera;
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
@@ -38,25 +38,30 @@ public:
 	bool bDead;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		float Power;
+	float Power;
 
 	UPROPERTY(EditAnywhere)
-		float Power_Treshold;
+	float Power_Treshold;
 
 	UFUNCTION()
 	void OnBeginOverlap(class UPrimitiveComponent* HitComp,
 	                    class AActor* OtherActor, class UPrimitiveComponent* OtherComp,
 	                    int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	UPROPERTY(EditAnywhere, Category = "UI HUD")
+		TSubclassOf<UUserWidget> Player_Power_Widget_Class;
+	UUserWidget* Player_Power_Widget;
+
+	void Restart();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

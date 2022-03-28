@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/BrightLand/UE4_TopDown/Tutorial1/Source/Tutorial1/Tutorial1.Build.cs",
+		"/Users/BrightLand/UE4_TopDown/Tutorial1/Source/Tutorial1.Target.cs",
+		"/Users/BrightLand/UE4_TopDown/Tutorial1/Source/Tutorial1Editor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

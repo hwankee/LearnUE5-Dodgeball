@@ -22,6 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 // End Cross Module References
 	DEFINE_FUNCTION(ABatteryMan::execOnBeginOverlap)
 	{
@@ -152,6 +154,10 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Power_Treshold_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Power_Treshold;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Player_Power_Widget_Class_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Player_Power_Widget_Class;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -200,11 +206,19 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABatteryMan_Statics::NewProp_Power_Treshold = { "Power_Treshold", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan, Power_Treshold), METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_Statics::NewProp_Power_Treshold_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_Statics::NewProp_Power_Treshold_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABatteryMan_Statics::NewProp_Player_Power_Widget_Class_MetaData[] = {
+		{ "Category", "UI HUD" },
+		{ "ModuleRelativePath", "BatteryMan.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABatteryMan_Statics::NewProp_Player_Power_Widget_Class = { "Player_Power_Widget_Class", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABatteryMan, Player_Power_Widget_Class), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ABatteryMan_Statics::NewProp_Player_Power_Widget_Class_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABatteryMan_Statics::NewProp_Player_Power_Widget_Class_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABatteryMan_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_Statics::NewProp_Power,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_Statics::NewProp_Power_Treshold,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABatteryMan_Statics::NewProp_Player_Power_Widget_Class,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABatteryMan_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABatteryMan>::IsAbstract,
@@ -233,7 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeBatteryMan() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABatteryMan, 3228855592);
+	IMPLEMENT_CLASS(ABatteryMan, 4107375241);
 	template<> BATTERY_API UClass* StaticClass<ABatteryMan>()
 	{
 		return ABatteryMan::StaticClass();
