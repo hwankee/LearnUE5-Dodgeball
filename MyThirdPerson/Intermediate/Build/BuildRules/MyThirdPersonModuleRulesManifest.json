@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPerson/MyThirdPerson.Build.cs",
+		"/Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPerson.Target.cs",
+		"/Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPersonEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.0"
+}

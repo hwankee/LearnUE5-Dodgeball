@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MyThirdPerson",
+			"Path": "/Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPerson.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MyThirdPersonEditor",
+			"Path": "/Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPersonEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
