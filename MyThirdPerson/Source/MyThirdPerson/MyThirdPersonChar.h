@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "MyThirdPersonChar.generated.h"
 
@@ -10,6 +12,14 @@ UCLASS()
 class MYTHIRDPERSON_API AMyThirdPersonChar : public ACharacter
 {
 	GENERATED_BODY()
+	
+	// 플레이어 카메라의 표시자 역할을 담당하는 스프링 암 컴포넌트 
+	UPROPERTY(VisibleAnywhere, BluePrintReadOnly, Category = MyTPS_Cam, meta = (AllowPrivateAccess = "true"))
+	class USpringArmComponent* CameraBoom;
+
+	// 카메라
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = MyTPS_Cam, meta = (AllowPrivateAccess = "true"))
+	class UCameraComponent* FollowCamera;
 
 public:
 	// Sets default values for this character's properties

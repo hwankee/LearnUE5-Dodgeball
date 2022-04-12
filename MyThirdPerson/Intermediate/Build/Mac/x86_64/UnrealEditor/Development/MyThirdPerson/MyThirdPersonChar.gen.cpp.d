@@ -3109,6 +3109,10 @@
   /Users/BrightLand/UE4_TopDown/MyThirdPerson/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/MyThirdPerson/MyThirdPersonChar.gen.cpp \
   /Users/BrightLand/UE4_TopDown/MyThirdPerson/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/MyThirdPerson/Definitions.MyThirdPerson.h \
   /Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPerson/MyThirdPersonChar.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SpringArmComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Camera/CameraComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CameraComponent.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementReplication.generated.h \

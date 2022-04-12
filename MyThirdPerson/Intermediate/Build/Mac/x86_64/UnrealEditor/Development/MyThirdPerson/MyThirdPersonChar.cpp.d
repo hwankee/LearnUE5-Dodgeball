@@ -3109,10 +3109,36 @@
   /Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPerson/MyThirdPersonChar.cpp \
   /Users/BrightLand/UE4_TopDown/MyThirdPerson/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/MyThirdPerson/Definitions.MyThirdPerson.h \
   /Users/BrightLand/UE4_TopDown/MyThirdPerson/Source/MyThirdPerson/MyThirdPersonChar.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SpringArmComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Camera/CameraComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CameraComponent.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementReplication.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/RootMotionSource.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/Character.generated.h \
-  /Users/BrightLand/UE4_TopDown/MyThirdPerson/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/MyThirdPerson/MyThirdPersonChar.generated.h
+  /Users/BrightLand/UE4_TopDown/MyThirdPerson/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/MyThirdPerson/MyThirdPersonChar.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Components/CapsuleComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/ShapeComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CapsuleComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/NavigationAvoidanceTypes.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/RVOAvoidanceInterface.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/PathFollowingAgentInterface.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/MovementComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/MovementComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/NavMovementComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/PawnMovementComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/NetworkPredictionInterface.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/CharacterMovementComponentAsync.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementComponentAsync.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementComponent.generated.h
