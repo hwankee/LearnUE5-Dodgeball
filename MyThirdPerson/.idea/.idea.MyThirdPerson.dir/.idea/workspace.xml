@@ -7,62 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7339e6a5-c177-42de-9a4d-df4cb98fb4e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/BP_GameMode.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/BP_MyTPC.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/MixamoCharacter_Master.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/MixamoAnimBP_Adam.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/MixamoBlend_Adam_1D.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_Running_Jump.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_Shooting.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_Skeleton.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_idle.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_jump.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_run.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Anims/Mixamo_Adam_walk.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/GC_Clothes_COL_2k.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/GC_Clothes_NM_2k.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/GC_Clothes_mask_2k.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/GC_Skin_COL_2k_diffuse.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/GC_Skin_Mask_2k.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/GC_Skin_NM_2k.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/M_Maximo_Adam_Body.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Materials/M_Maximo_Adam_Face.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/MixamoAnimPack/Mixamo_Adam/Mesh/Maximo_Adam.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/DebugGame/RD/Definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/DebugGame/RiderBlueprint/Definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/DebugGame/RiderGameControl/Definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/DebugGame/RiderLink/Definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/DebugGame/RiderLogging/Definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/DebugGame/RiderShaderInfoDump/Definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderGameControl/RiderGameControl.cpp.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderLink/Module.RiderLink.cpp.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyThirdPerson.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyThirdPerson.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Mac/MyThirdPersonEditor.target" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Mac/MyThirdPersonEditor.target" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Mac/UnrealEditor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Mac/UnrealEditor.modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Maps/Minimal_Default.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Maps/Minimal_Default.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Mac/ActionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Mac/ActionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Mac/x86_64/MyThirdPersonEditor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Mac/x86_64/MyThirdPersonEditor/Development/DependencyCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Mac/x86_64/MyThirdPersonEditor/Development/HotReload.state" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Mac/x86_64/MyThirdPersonEditor/Development/HotReload.state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Mac/x86_64/MyThirdPersonEditor/Development/Metadata-HotReload.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Mac/x86_64/MyThirdPersonEditor/Development/Metadata-HotReload.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Mac/DebugGame/Editor/MyThirdPerson.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Mac/DebugGame/Editor/MyThirdPerson.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Mac/DebugGame/Editor/UE5.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Mac/DebugGame/Editor/UE5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/0/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/1/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/2/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/3/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/4/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/5/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/6/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/7/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Shaders/tmp/E5199D2AFC46B64EA88086982E64BA59/8/WorkerInputOnly.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Mac/UnrealEditor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Mac/UnrealEditor.modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
-    </list>
+    <list default="true" id="7339e6a5-c177-42de-9a4d-df4cb98fb4e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,29 +28,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C++",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MyThirdPerson" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/MyThirdPerson.uproject" />
@@ -159,7 +104,10 @@
       <updated>1649775224286</updated>
       <workItem from="1649775224288" duration="1612000" />
       <workItem from="1649779851869" duration="465000" />
-      <workItem from="1649857943893" duration="816000" />
+      <workItem from="1649857943893" duration="940000" />
+      <workItem from="1649932280519" duration="1997000" />
+      <workItem from="1649934832889" duration="1265000" />
+      <workItem from="1649936584719" duration="1427000" />
     </task>
     <servers />
   </component>
@@ -182,5 +130,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

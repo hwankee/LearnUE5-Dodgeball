@@ -3141,4 +3141,7 @@
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/NetworkPredictionInterface.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/CharacterMovementComponentAsync.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementComponentAsync.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementComponent.generated.h
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/KismetMathLibrary.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.inl
