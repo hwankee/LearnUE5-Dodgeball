@@ -30,6 +30,10 @@ protected:
 	virtual void BeginPlay() override;
 	void MoveRight(float Value);
 	void MoveForward(float Value);
+	void TouchBegin(ETouchIndex::Type FingerIndex, FVector Location);
+	void TouchEnd(ETouchIndex::Type FingerIndex, FVector Location);
+	void BeginWalking();
+	void StopWalking();
 
 public:	
 	// Called every frame

@@ -64,6 +64,26 @@ void AMyThirdPersonChar::MoveForward(float Value)
 	}
 }
 
+void AMyThirdPersonChar::TouchBegin(ETouchIndex::Type FingerIndex, FVector Location)
+{
+	Jump();
+}
+
+void AMyThirdPersonChar::TouchEnd(ETouchIndex::Type FingerIndex, FVector Location)
+{
+	StopJumping();
+}
+
+void AMyThirdPersonChar::BeginWalking()
+{
+	GetCharacterMovement()->MaxWalkSpeed = 40;
+}
+
+void AMyThirdPersonChar::StopWalking()
+{
+	GetCharacterMovement()->MaxWalkSpeed = 250;
+}
+
 // Called every frame
 void AMyThirdPersonChar::Tick(float DeltaTime)
 {
@@ -74,8 +94,12 @@ void AMyThirdPersonChar::Tick(float DeltaTime)
 void AMyThirdPersonChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	PlayerInputComponent->BindAction("Walk", IE_Pressed, this, &AMyThirdPersonChar::BeginWalking);
+	PlayerInputComponent->BindAction("Walk", IE_Released, this, &AMyThirdPersonChar::StopWalking);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindTouch(IE_Pressed, this, &AMyThirdPersonChar::TouchBegin);
+	PlayerInputComponent->BindTouch(IE_Released, this, &AMyThirdPersonChar::TouchEnd);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyThirdPersonChar::MoveRight);
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyThirdPersonChar::MoveForward);
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);

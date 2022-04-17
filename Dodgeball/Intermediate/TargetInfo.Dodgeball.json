@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Dodgeball",
+			"Path": "/Users/BrightLand/UE4_TopDown/Dodgeball/Source/Dodgeball.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "DodgeballEditor",
+			"Path": "/Users/BrightLand/UE4_TopDown/Dodgeball/Source/DodgeballEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
