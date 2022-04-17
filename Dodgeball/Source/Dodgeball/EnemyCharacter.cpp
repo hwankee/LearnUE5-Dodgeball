@@ -12,6 +12,8 @@ AEnemyCharacter::AEnemyCharacter()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	SightSource = CreateDefaultSubobject<USceneComponent>(TEXT("SightSource"));
+	SightSource->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -65,11 +67,20 @@ bool AEnemyCharacter::CanSeeActor(const AActor* TargetActor) const
 	FHitResult Hit;
 
 	// 라인 트레이스의 시작과 끝 위치
-	FVector Start = GetActorLocation();
+	// FVector Start = GetActorLocation();
+	FVector Start = SightSource->GetComponentLocation();
 	FVector End = TargetActor->GetActorLocation();
 
+	// 스윕 트레이스
+	// FQuat Rotation = FQuat::Identity;
+
+	// 라인 트레이스
 	// 시야 판단을 위해 비교할 트레이스 채널
-	ECollisionChannel Channel = ECollisionChannel::ECC_Visibility;
+	ECollisionChannel Channel = ECollisionChannel::ECC_GameTraceChannel1;
+
+	// // 스윕 트레이스
+	// FCollisionShape Shape = FCollisionShape::MakeBox(FVector(20.f, 20.f, 20.f));
+	// GetWorld()->SweepSingleByChannel(Hit, Start, End, Rotation, Channel, Shape);
 
 	// 라인 트레이스 실행하기
 	GetWorld()->LineTraceSingleByChannel(Hit, Start, End, Channel);

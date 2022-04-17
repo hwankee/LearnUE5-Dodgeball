@@ -11,6 +11,9 @@ class DODGEBALL_API AEnemyCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= LookAt, meta = (AllowPrivateAccess = "true"))
+	class USceneComponent* SightSource;
+
 public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
