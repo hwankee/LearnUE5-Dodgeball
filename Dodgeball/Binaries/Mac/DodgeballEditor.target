@@ -11,9 +11,9 @@
 	{
 		"MajorVersion": 5,
 		"MinorVersion": 0,
-		"PatchVersion": 0,
-		"Changelist": 19505902,
-		"CompatibleChangelist": 0,
+		"PatchVersion": 1,
+		"Changelist": 19764885,
+		"CompatibleChangelist": 19505902,
 		"IsLicenseeVersion": 0,
 		"IsPromotedBuild": 0,
 		"BranchName": "++UE5+Release-5.0",
@@ -90,6 +90,26 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Mac/AgentInterface.pdb",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Mac/Android/UnrealEditor-AndroidDeviceDetection.dylib",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Mac/Android/UnrealEditor-AndroidPlatformEditor.dylib",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Mac/Android/UnrealEditor-AndroidRuntimeSettings.dylib",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Mac/Android/UnrealEditor-AndroidTargetPlatform.dylib",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Mac/Android/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
