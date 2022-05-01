@@ -3,6 +3,7 @@
 
 #include "DodgeballProjectile.h"
 #include "DodgeballCharacter.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 
 // Sets default values
 ADodgeballProjectile::ADodgeballProjectile()
@@ -32,6 +33,10 @@ ADodgeballProjectile::ADodgeballProjectile()
 	// 이 Sphere 컴포넌트를 Root 컴포넌트로 설정한다.
 	// 이렇게 하지 않으면 충돌이 제대로 동작하지 않을 수 있다.
 	RootComponent = SphereComponent;
+
+	// 앞으로 가도록 함
+	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement"));
+	ProjectileMovement->InitialSpeed = 1500.f;
 }
 
 void ADodgeballProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -47,6 +52,8 @@ void ADodgeballProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActo
 void ADodgeballProjectile::BeginPlay()
 {
 	Super::BeginPlay();
+
+	SetLifeSpan(5.f);
 }
 
 // Called every frame

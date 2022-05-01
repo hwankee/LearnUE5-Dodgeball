@@ -3116,6 +3116,12 @@
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/RootMotionSource.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/Character.generated.h \
   /Users/BrightLand/UE4_TopDown/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/EnemyCharacter.generated.h \
+  /Users/BrightLand/UE4_TopDown/Dodgeball/Source/Dodgeball/DodgeballProjectile.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Components/SphereComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/ShapeComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SphereComponent.generated.h \
+  /Users/BrightLand/UE4_TopDown/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/DodgeballProjectile.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/KismetMathLibrary.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.inl \

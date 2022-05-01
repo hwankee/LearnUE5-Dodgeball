@@ -14,6 +14,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Dodgeball();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	DODGEBALL_API UClass* Z_Construct_UClass_ADodgeballProjectile_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 // End Cross Module References
 	void AEnemyCharacter::StaticRegisterNativesAEnemyCharacter()
 	{
@@ -33,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SightSource_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SightSource;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DodgeballClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_DodgeballClass;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -57,8 +63,18 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_SightSource = { "SightSource", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemyCharacter, SightSource), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_SightSource_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_SightSource_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_DodgeballClass_MetaData[] = {
+		{ "Category", "Dodgeball" },
+		{ "Comment", "// dodgeball \xec\x98\xa4\xeb\xb8\x8c\xec\xa0\x9d\xed\x8a\xb8\xeb\xa5\xbc \xec\x83\x9d\xec\x84\xb1\xed\x95\x98\xeb\x8a\x94 \xeb\x8d\xb0 \xec\x82\xac\xec\x9a\xa9\xed\x95\xa0 \xed\x81\xb4\xeb\x9e\x98\xec\x8a\xa4\n" },
+		{ "ModuleRelativePath", "EnemyCharacter.h" },
+		{ "ToolTip", "dodgeball \xec\x98\xa4\xeb\xb8\x8c\xec\xa0\x9d\xed\x8a\xb8\xeb\xa5\xbc \xec\x83\x9d\xec\x84\xb1\xed\x95\x98\xeb\x8a\x94 \xeb\x8d\xb0 \xec\x82\xac\xec\x9a\xa9\xed\x95\xa0 \xed\x81\xb4\xeb\x9e\x98\xec\x8a\xa4" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_DodgeballClass = { "DodgeballClass", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemyCharacter, DodgeballClass), Z_Construct_UClass_ADodgeballProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_DodgeballClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_DodgeballClass_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemyCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_SightSource,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_DodgeballClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemyCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEnemyCharacter>::IsAbstract,
@@ -96,9 +112,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_EnemyCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemyCharacter, AEnemyCharacter::StaticClass, TEXT("AEnemyCharacter"), &Z_Registration_Info_UClass_AEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyCharacter), 56502423U) },
+		{ Z_Construct_UClass_AEnemyCharacter, AEnemyCharacter::StaticClass, TEXT("AEnemyCharacter"), &Z_Registration_Info_UClass_AEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyCharacter), 1698446810U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_EnemyCharacter_h_2399376499(TEXT("/Script/Dodgeball"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_EnemyCharacter_h_1336125711(TEXT("/Script/Dodgeball"),
 		Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_EnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_EnemyCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

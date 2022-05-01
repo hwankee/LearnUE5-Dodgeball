@@ -16,6 +16,10 @@ class DODGEBALL_API ADodgeballProjectile : public AActor
 		Dodgeball, meta = (AllowPrivateAccess = "true"))
 	class USphereComponent* SphereComponent;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=
+		Dodgeball, meta=(AllowPrivateAccess = "true"))
+	class UProjectileMovementComponent* ProjectileMovement;
+
 public:
 	// Sets default values for this actor's properties
 	ADodgeballProjectile();

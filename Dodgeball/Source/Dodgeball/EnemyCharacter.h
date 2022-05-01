@@ -14,13 +14,31 @@ class DODGEBALL_API AEnemyCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= LookAt, meta = (AllowPrivateAccess = "true"))
 	class USceneComponent* SightSource;
 
+	// 적 캐릭터가 이번 프레임에 플레이어를 볼 수 있는지 여부
+	bool bCanSeePlayer = false;
+	// 적 캐릭터가 이전 프레임에 플레이어를 볼 수 있었는지 여부
+	bool bPreviousCanSeePlayer = false;
+
 public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
 
+	// dodgeball 오브젝트를 생성하는 데 사용할 클래스
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category=Dodgeball)
+	TSubclassOf<class ADodgeballProjectile> DodgeballClass;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	// 타이머를 식별할 때 사용할 FTimerhandle 속성
+	FTimerHandle ThrowTimerHandle;
+	// 닷지볼을 던지는 동작 사이에 대기하는 시간 (간격)을 나타내는 속성, 기본 2초
+	float ThrowingInterval = 2.f;
+	// 타이머를 반복(루프)하기 전에 대기할 처음 시간을 나타내는 속성, 기본 0.5초
+	float ThrowingDelay = 0.5f;
+	// 타이머가 끝날 때마다 호출할 함수, ThrowDodgeball을 생성하고, 이 함수를 호출
+	void ThrowDodgeball();
 
 public:	
 	// Called every frame
@@ -29,7 +47,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	void LookAtActor(AActor* TargetActor);
+    // 캐릭터가 전달된 액터를 바라보도록 회전을 변경한다.
+    // 전달된 액터를 볼 수 있는지 여부를 반환한다.
+	bool LookAtActor(AActor* TargetActor);
 	bool CanSeeActor(const AActor* TargetActor) const;
 
 };

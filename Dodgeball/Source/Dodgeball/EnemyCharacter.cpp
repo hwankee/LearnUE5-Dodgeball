@@ -4,6 +4,8 @@
 #include "EnemyCharacter.h"
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h" // 라인 트레이스 시각화
+#include "DodgeballProjectile.h"
+#include "TimerManager.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -22,6 +24,20 @@ void AEnemyCharacter::BeginPlay()
 	Super::BeginPlay();
 }
 
+void AEnemyCharacter::ThrowDodgeball()
+{
+	if (DodgeballClass == nullptr)
+	{
+		return;
+	}
+
+	FVector ForwardVector = GetActorForwardVector();
+	float SpawnDistance = 40.f;
+	FVector SpawnLocation = GetActorLocation() + (ForwardVector * SpawnDistance);
+	// 새 닷지볼 스폰하기
+	GetWorld()->SpawnActor<ADodgeballProjectile>(DodgeballClass, SpawnLocation, GetActorRotation());
+}
+
 // Called every frame
 void AEnemyCharacter::Tick(float DeltaTime)
 {
@@ -31,7 +47,27 @@ void AEnemyCharacter::Tick(float DeltaTime)
 	ACharacter* PlayerCharacter = UGameplayStatics::GetPlayerCharacter(this, 0);
 
 	// 매 프레임 플레이어 캐릭터를 바라본다.
-	LookAtActor(PlayerCharacter);
+	bCanSeePlayer = LookAtActor(PlayerCharacter);
+
+	// 값이 다르다는 것은.. 패치가 일어났다는 뜻이다.
+	// 이전에 볼 수 없었는데 볼 수 있게 됐다는 뜻
+	if (bCanSeePlayer != bPreviousCanSeePlayer)
+	{
+		if (bCanSeePlayer)
+		{
+			// 닷지볼 던지기를 시작한다.
+			GetWorldTimerManager().SetTimer(ThrowTimerHandle, this,
+			                                &AEnemyCharacter::ThrowDodgeball, ThrowingInterval, true,
+			                                ThrowingDelay);
+		}
+		else
+		{
+			// 단지볼 던지기를 멈춘다.
+			GetWorldTimerManager().ClearTimer(ThrowTimerHandle);
+		}
+	}
+
+	bPreviousCanSeePlayer = bCanSeePlayer;
 }
 
 // Called to bind functionality to input
@@ -40,10 +76,10 @@ void AEnemyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-void AEnemyCharacter::LookAtActor(AActor* TargetActor)
+bool AEnemyCharacter::LookAtActor(AActor* TargetActor)
 {
 	if (TargetActor == nullptr)
-		return;
+		return false;
 
 	if (CanSeeActor(TargetActor))
 	{
@@ -55,7 +91,10 @@ void AEnemyCharacter::LookAtActor(AActor* TargetActor)
 
 		// 적의 회전을 앞서 구한 회전 값으로 설정한다.
 		SetActorRotation(LookAtRotation);
+		return true;
 	}
+
+	return false;
 }
 
 bool AEnemyCharacter::CanSeeActor(const AActor* TargetActor) const

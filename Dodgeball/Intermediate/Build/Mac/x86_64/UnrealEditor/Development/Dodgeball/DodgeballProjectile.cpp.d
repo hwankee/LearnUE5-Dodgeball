@@ -3121,4 +3121,8 @@
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/RootMotionSource.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/Character.generated.h \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/DodgeballCharacter.generated.h
+  /Users/BrightLand/UE4_TopDown/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/DodgeballCharacter.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/ProjectileMovementComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/MovementComponent.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/MovementComponent.generated.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/ProjectileMovementComponent.generated.h
