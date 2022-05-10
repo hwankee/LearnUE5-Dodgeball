@@ -1,7 +1,7 @@
-/Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/RD.cpp.o: \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Source/RD/RD.cpp \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Source/RD/RD.h \
+/Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/RD.cpp.o: \
+  /Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Source/RD/RD.cpp \
+  /Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
+  /Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Source/RD/RD.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/Logging/LogMacros.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/CoreTypes.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/HAL/Platform.h \

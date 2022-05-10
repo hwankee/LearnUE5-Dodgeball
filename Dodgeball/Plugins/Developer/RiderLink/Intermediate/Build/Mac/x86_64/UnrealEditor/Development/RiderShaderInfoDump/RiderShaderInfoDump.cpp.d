@@ -1,7 +1,7 @@
-/Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfoDump/RiderShaderInfoDump.cpp.o: \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Source/RiderShaderInfoDump/RiderShaderInfoDump.cpp \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfoDump/Definitions.h \
-  /Users/BrightLand/UE4_TopDown/Dodgeball/Plugins/Developer/RiderLink/Source/RiderShaderInfoDump/RiderShaderInfoDump.h \
+/Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfoDump/RiderShaderInfoDump.cpp.o: \
+  /Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Source/RiderShaderInfoDump/RiderShaderInfoDump.cpp \
+  /Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfoDump/Definitions.h \
+  /Users/BrightLand/LearnUE4/Dodgeball/Plugins/Developer/RiderLink/Source/RiderShaderInfoDump/RiderShaderInfoDump.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/Modules/ModuleInterface.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/CoreTypes.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Core/Public/HAL/Platform.h \
