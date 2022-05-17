@@ -3108,5 +3108,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
   /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/HealthComponent.cpp \
   /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/Definitions.Dodgeball.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/KismetSystemLibrary.generated.h \
   /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/HealthComponent.h \
   /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/HealthComponent.generated.h

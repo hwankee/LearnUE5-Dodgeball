@@ -16,12 +16,16 @@ public:
 	// Sets default values for this component's properties
 	UHealthComponent();
 
-protected:
-	UPROPERTY(EditDefaultsOnly, Category=Health)
-	float Health = 100.f;
+	// 소유자로부터 체력 점수를 뺏는다.
+	void LoseHealth(float Amount);
 
+protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	// 소유자의 초기 및 현재 체력 점수의 양
+	UPROPERTY(EditDefaultsOnly, Category = Health)
+	float Health = 100.f;
 
 public:
 	// Called every frame
