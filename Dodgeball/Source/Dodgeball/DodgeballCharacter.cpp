@@ -8,6 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ADodgeballCharacter
@@ -85,6 +86,14 @@ void ADodgeballCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Lo
 void ADodgeballCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
 {
 	StopJumping();
+}
+
+void ADodgeballCharacter::OnDeath_Implementation()
+{
+	UKismetSystemLibrary::QuitGame(this,
+	                               nullptr,
+	                               EQuitPreference::Quit,
+	                               true);
 }
 
 void ADodgeballCharacter::MoveForward(float Value)

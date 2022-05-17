@@ -1,8 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Kismet/KismetSystemLibrary.h"
+#include "HealthInterface.h"
 #include "HealthComponent.h"
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UHealthComponent::UHealthComponent()
@@ -28,10 +29,10 @@ void UHealthComponent::LoseHealth(float Amount)
 	if (Health <= 0.f)
 	{
 		Health = 0.f;
-		UKismetSystemLibrary::QuitGame(this,
-									   nullptr,
-									   EQuitPreference::Quit,
-									   true);
+		if (GetOwner()->Implements<UHealthInterface>())
+		{
+			IHealthInterface::Execute_OnDeath(GetOwner());
+		}
 	}
 }
 

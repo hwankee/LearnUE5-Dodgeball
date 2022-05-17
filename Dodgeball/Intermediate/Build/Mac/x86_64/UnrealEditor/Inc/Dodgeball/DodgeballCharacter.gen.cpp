@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeDodgeballCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_Dodgeball();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	DODGEBALL_API UClass* Z_Construct_UClass_UHealthInterface_NoRegister();
 // End Cross Module References
 	void ADodgeballCharacter::StaticRegisterNativesADodgeballCharacter()
 	{
@@ -43,6 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeDodgeballCharacter() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_TurnRateGamepad;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -93,6 +95,9 @@ void EmptyLinkFunctionForGeneratedCodeDodgeballCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADodgeballCharacter_Statics::NewProp_FollowCamera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADodgeballCharacter_Statics::NewProp_TurnRateGamepad,
 	};
+		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ADodgeballCharacter_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UHealthInterface_NoRegister, (int32)VTABLE_OFFSET(ADodgeballCharacter, IHealthInterface), false },  // 4085012949
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADodgeballCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADodgeballCharacter>::IsAbstract,
 	};
@@ -103,11 +108,11 @@ void EmptyLinkFunctionForGeneratedCodeDodgeballCharacter() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_ADodgeballCharacter_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_ADodgeballCharacter_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x008000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ADodgeballCharacter_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ADodgeballCharacter_Statics::Class_MetaDataParams))
 	};
@@ -129,9 +134,9 @@ void EmptyLinkFunctionForGeneratedCodeDodgeballCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_DodgeballCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ADodgeballCharacter, ADodgeballCharacter::StaticClass, TEXT("ADodgeballCharacter"), &Z_Registration_Info_UClass_ADodgeballCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADodgeballCharacter), 3492411096U) },
+		{ Z_Construct_UClass_ADodgeballCharacter, ADodgeballCharacter::StaticClass, TEXT("ADodgeballCharacter"), &Z_Registration_Info_UClass_ADodgeballCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADodgeballCharacter), 4047162605U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_DodgeballCharacter_h_2834587469(TEXT("/Script/Dodgeball"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_DodgeballCharacter_h_3932408252(TEXT("/Script/Dodgeball"),
 		Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_DodgeballCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Dodgeball_Source_Dodgeball_DodgeballCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

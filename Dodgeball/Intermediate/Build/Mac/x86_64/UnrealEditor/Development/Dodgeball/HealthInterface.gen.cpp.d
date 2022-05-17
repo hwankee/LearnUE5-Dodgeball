@@ -1,4 +1,4 @@
-/Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/HealthComponent.cpp.o: \
+/Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/HealthInterface.gen.cpp.o: \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SoundWave.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CanvasTypes.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/CanvasTypes.h \
@@ -3106,9 +3106,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
-  /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/HealthComponent.cpp \
+  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/HealthInterface.gen.cpp \
   /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/Definitions.Dodgeball.h \
   /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/HealthInterface.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/HealthInterface.generated.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/HealthComponent.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/HealthComponent.generated.h
+  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/HealthInterface.generated.h
