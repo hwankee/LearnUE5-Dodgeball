@@ -12,7 +12,7 @@ class DODGEBALL_API AEnemyCharacter : public ACharacter
 	GENERATED_BODY()
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= LookAt, meta = (AllowPrivateAccess = "true"))
-	class USceneComponent* SightSource;
+	class ULookAtActorComponent* LookAtActorComponent;
 
 	// 적 캐릭터가 이번 프레임에 플레이어를 볼 수 있는지 여부
 	bool bCanSeePlayer = false;
@@ -46,10 +46,4 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-    // 캐릭터가 전달된 액터를 바라보도록 회전을 변경한다.
-    // 전달된 액터를 볼 수 있는지 여부를 반환한다.
-	bool LookAtActor(AActor* TargetActor);
-	bool CanSeeActor(const AActor* TargetActor) const;
-
 };

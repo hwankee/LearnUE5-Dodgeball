@@ -1,4 +1,4 @@
-/Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/EnemyCharacter.cpp.o: \
+/Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/LookAtActorComponent.gen.cpp.o: \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SoundWave.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CanvasTypes.generated.h \
   /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Public/CanvasTypes.h \
@@ -3106,34 +3106,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
-  /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/EnemyCharacter.cpp \
+  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/LookAtActorComponent.gen.cpp \
   /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/Dodgeball/Definitions.Dodgeball.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/EnemyCharacter.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/CharacterMovementReplication.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/RootMotionSource.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/Character.generated.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/EnemyCharacter.generated.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/DodgeballProjectile.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Components/SphereComponent.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/ShapeComponent.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/SphereComponent.generated.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/DodgeballProjectile.generated.h \
   /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/LookAtActorComponent.h \
-  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/LookAtActorComponent.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/ProjectileMovementComponent.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/GameFramework/MovementComponent.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/MovementComponent.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/ProjectileMovementComponent.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/KismetSystemLibrary.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Sound/DialogueTypes.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/DialogueTypes.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStaticsTypes.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/GameplayStaticsTypes.generated.h \
-  /Users/Shared/Epic\ Games/UE_5.0/Engine/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Engine/GameplayStatics.generated.h
+  /Users/BrightLand/LearnUE4/Dodgeball/Intermediate/Build/Mac/x86_64/UnrealEditor/Inc/Dodgeball/LookAtActorComponent.generated.h
