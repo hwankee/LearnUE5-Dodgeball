@@ -26,8 +26,17 @@ public:
 
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
-		UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-	
+	           UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	// FORCEINLINE 매크로를 사용하면 이 함수의 선언을 헤더 파일에 추가할 수 없고,
+	// 구현을 소스파일에 추가할 수 없다. 앞에서 본 것처럼, 헤더 파일에 선언과 구현을 모두 동시에 작성해야 한다. 
+	FORCEINLINE class UProjectileMovementComponent*
+	// Getter 함수
+	GetProjectileMovementComponent() const
+	{
+		return ProjectileMovement;
+	}
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

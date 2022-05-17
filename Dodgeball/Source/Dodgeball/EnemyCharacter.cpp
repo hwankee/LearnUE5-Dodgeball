@@ -3,9 +3,10 @@
 
 #include "EnemyCharacter.h"
 #include "Engine/World.h"
-#include "DrawDebugHelpers.h" // 라인 트레이스 시각화
+#include "DodgeballFunctionLibrary.h"
 #include "DodgeballProjectile.h"
 #include "TimerManager.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -34,8 +35,14 @@ void AEnemyCharacter::ThrowDodgeball()
 	FVector ForwardVector = GetActorForwardVector();
 	float SpawnDistance = 40.f;
 	FVector SpawnLocation = GetActorLocation() + (ForwardVector * SpawnDistance);
+	FTransform SpawnTransform(GetActorRotation(), SpawnLocation);
+	ADodgeballProjectile* Projectile = GetWorld()
+		->SpawnActorDeferred<ADodgeballProjectile>(DodgeballClass, SpawnTransform);
+	Projectile->GetProjectileMovementComponent()->InitialSpeed = 2200.f;
+	Projectile->FinishSpawning(SpawnTransform);
+
 	// 새 닷지볼 스폰하기
-	GetWorld()->SpawnActor<ADodgeballProjectile>(DodgeballClass, SpawnLocation, GetActorRotation());
+	// GetWorld()->SpawnActor<ADodgeballProjectile>(DodgeballClass, SpawnLocation, GetActorRotation());
 }
 
 // Called every frame
@@ -81,7 +88,12 @@ bool AEnemyCharacter::LookAtActor(AActor* TargetActor)
 	if (TargetActor == nullptr)
 		return false;
 
-	if (CanSeeActor(TargetActor))
+	const TArray<const AActor*> IgnoreActors = {this, TargetActor};
+	if (UDodgeballFunctionLibrary::CanSeeActor(
+		GetWorld(),
+		SightSource->GetComponentLocation(),
+		TargetActor,
+		IgnoreActors))
 	{
 		FVector Start = GetActorLocation();
 		FVector End = TargetActor->GetActorLocation();

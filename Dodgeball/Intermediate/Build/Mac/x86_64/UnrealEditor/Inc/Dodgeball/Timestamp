@@ -1,6 +1,8 @@
 /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/EnemyCharacter.h
-/Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/VictoryBox.h
 /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/Wall.h
+/Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/VictoryBox.h
+/Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/DodgeballCharacter.h
+/Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/DodgeballFunctionLibrary.h
 /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/DodgeballGameMode.h
 /Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/DodgeballProjectile.h
-/Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/DodgeballCharacter.h
+/Users/BrightLand/LearnUE4/Dodgeball/Source/Dodgeball/HealthComponent.h
