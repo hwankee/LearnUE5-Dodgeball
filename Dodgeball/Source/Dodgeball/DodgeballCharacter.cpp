@@ -5,6 +5,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "HealthComponent.h"
+#include "DodgeballPlayerController.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -90,10 +91,19 @@ void ADodgeballCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Lo
 
 void ADodgeballCharacter::OnDeath_Implementation()
 {
-	UKismetSystemLibrary::QuitGame(this,
-	                               nullptr,
-	                               EQuitPreference::Quit,
-	                               true);
+	// UKismetSystemLibrary::QuitGame(this,
+	//                                nullptr,
+	//                                EQuitPreference::Quit,
+	//                                true);
+
+	ADodgeballPlayerController* PlayerController =
+		Cast<ADodgeballPlayerController>(GetController());
+
+	if (PlayerController != nullptr)
+	{
+		PlayerController->ShowRestartWidget();
+	}
+	
 }
 
 void ADodgeballCharacter::MoveForward(float Value)
