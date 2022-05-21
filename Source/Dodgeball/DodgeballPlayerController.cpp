@@ -3,7 +3,28 @@
 
 #include "DodgeballPlayerController.h"
 #include "RestartWidget.h"
+#include "HUDWidget.h"
 
+
+void ADodgeballPlayerController::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (BP_HUDWidget != nullptr)
+	{
+		HUDWidget = CreateWidget<UHUDWidget>(this, BP_HUDWidget);
+		HUDWidget->AddToViewport();
+	}
+}
+
+void ADodgeballPlayerController::UpdateHealthPercent(float HealthPercent)
+{
+	// HUD를 화면에 추가하고, 업데이트하는데 필요한 로직을 추가함
+	if (HUDWidget != nullptr)
+	{
+		HUDWidget->UpdateHealthPercent(HealthPercent);
+	}
+}
 
 void ADodgeballPlayerController::ShowRestartWidget()
 {

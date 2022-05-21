@@ -18,10 +18,21 @@ public:
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<class URestartWidget> BP_RestartWidget;
 
+	// 우리가 사용할 HUD를 지정하는데 이 속성을 사용
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<class UHUDWidget> BP_HUDWidget;
+
 	void ShowRestartWidget();
 	void HideRestartWidget();
+	void UpdateHealthPercent(float HealthPercent);
 
+protected:
+	virtual void BeginPlay() override;
+	
 private:
 	UPROPERTY()
 	class URestartWidget* RestartWidget;
+
+	UPROPERTY()
+	class UHUDWidget* HUDWidget;
 };

@@ -19,6 +19,8 @@ public:
 	// 소유자로부터 체력 점수를 뺏는다.
 	void LoseHealth(float Amount);
 
+	FORCEINLINE float GetHealthPercent() const { return Health / 100.f; }
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

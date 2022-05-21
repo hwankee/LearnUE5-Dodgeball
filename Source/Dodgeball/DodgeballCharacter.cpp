@@ -103,7 +103,17 @@ void ADodgeballCharacter::OnDeath_Implementation()
 	{
 		PlayerController->ShowRestartWidget();
 	}
-	
+}
+
+void ADodgeballCharacter::OnTakeDamage_Implementation()
+{
+	ADodgeballPlayerController* PlayerController =
+		Cast<ADodgeballPlayerController>(GetController());
+
+	if (PlayerController != nullptr)
+	{
+		PlayerController->UpdateHealthPercent(HealthComponent->GetHealthPercent());
+	}
 }
 
 void ADodgeballCharacter::MoveForward(float Value)

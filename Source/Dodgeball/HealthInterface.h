@@ -25,4 +25,9 @@ public:
 	UFUNCTION(BlueprintNativeEvent, Category=Health)
 	void OnDeath();
 	virtual void OnDeath_Implementation() = 0; // 구현되지 않았다는 것을 알림
+
+	// 데미지를 입을 때마다 호출할 "인터페이스"!!
+	UFUNCTION(BlueprintNativeEvent, Category=Health)
+	void OnTakeDamage();
+	virtual void OnTakeDamage_Implementation() = 0;
 };
