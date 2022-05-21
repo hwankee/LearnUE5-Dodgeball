@@ -10,9 +10,15 @@
 void URestartWidget::NativeOnInitialized()
 {
 	Super::NativeOnInitialized();
+
 	if (RestartButton != nullptr)
 	{
 		RestartButton->OnClicked.AddDynamic(this, &URestartWidget::OnRestartClicked);
+	}
+
+	if (ExitButton != nullptr)
+	{
+		ExitButton->OnClicked.AddDynamic(this, &URestartWidget::OnExitClicked);
 	}
 }
 
@@ -38,10 +44,4 @@ void URestartWidget::OnExitClicked()
 			nullptr,    // PlayerController 오브젝트, 자동으로 PlayerController를 찾기 때문에, 여기선 nullptr로 해둠
 			EQuitPreference::Quit,    // 게임을 종료하거나, 백그라운드 프로세스를 설정해 게임을 종료하는 방법을 설정하는데 사용하는 EQuit 오브젝트
 			true); // 게임을 종료할 때, 플랫폼의 제한(방해)를 무시할지 여부
-
-	if (ExitButton != nullptr)
-	{
-		ExitButton->OnClicked.AddDynamic(this,
-			&URestartWidget::OnExitClicked);
-	}
 }
