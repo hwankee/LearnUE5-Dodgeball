@@ -19,10 +19,13 @@ class DODGEBALL_API ADodgeballProjectile : public AActor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=
 		Dodgeball, meta=(AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
-	
+
 	// 닷지볼이 표면에 튕길 때 재생할 사운드
 	UPROPERTY(EditAnywhere, Category=Sound)
 	class USoundBase* BounceSound;
+
+	UPROPERTY(EditAnywhere, Category=Sound)
+	class USoundBase* DamageSound;
 
 public:
 	// Sets default values for this actor's properties
@@ -44,7 +47,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
+
 	// 닷지볼이 플레이어 캐릭터에게 입힐 데미지
 	UPROPERTY(EditAnywhere, Category=Damage)
 	float Damage = 34.f;
@@ -52,6 +55,10 @@ protected:
 	// 이전 사운드의 사운드 감쇄 (sound attenuation)
 	UPROPERTY(EditAnywhere, Category=Sound)
 	class USoundAttenuation* BounceSoundAttenuation;
+
+	// 플레이어에 맞았을 때 닷지볼이 생성할 파티클 시스템
+	UPROPERTY(EditAnyWhere, Category = Particles)
+	class UParticleSystem* HitParticles;
 
 public:
 	// Called every frame
